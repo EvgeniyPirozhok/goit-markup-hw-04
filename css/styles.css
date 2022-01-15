@@ -68,6 +68,18 @@ h1,h2,h3,h4,h5,h6,p,ul{
 .site-nav .items:not(:last-child){
     margin-right: 50px;
 }
+.emeil-icon{
+    width: 16px;
+    height: 12px;
+    margin-right: 11px;
+    fill: currentColor;
+}
+.tel-icon{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
 
 .site-nav .link {
     display: block;
@@ -80,7 +92,9 @@ h1,h2,h3,h4,h5,h6,p,ul{
     text-decoration: none;
 }
 .site-nav .link:hover,
-.site-nav .link:focus,
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
 .site-nav .link:active{
     color: var(--accent-color);
 }
@@ -170,6 +184,18 @@ display: none;
 }
 .benefits-section{
 display: flex;
+}
+.benefits-bkg{
+    display: block;
+    border-radius: 4px;
+    background-color: var(--background-light-grey);
+    box-sizing: border-box;
+    height: 120px;   
+   
+    margin-bottom: 30px;
+}
+.antena-icon{
+    margin: 25 100
 }
 .benefits-li{
 width: 270px;
