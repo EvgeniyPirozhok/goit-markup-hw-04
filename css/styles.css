@@ -7,7 +7,7 @@
     --background-grey: #2F303A;
     --background-light-grey: #F5F4FA;
     --card-set-gap: 30px;
-    --icon-size: 44px 44px
+    --icon-color: #AFB1B8;
 }
 body{
     background-color: var(--white-color);
@@ -273,27 +273,58 @@ width: 270px;
     background: #FFFFFF;
     text-align: center;
 }
-.soc-li{
-    display: block;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    padding: 12px 12px;
-    
-}
-.soc-li:not(:first-child){
-    margin-left: 10px;
-}
 .soc-ul{
     display: flex;
     justify-content: center;
-    margin-bottom: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap);}
+.soc-li a{
+    color: var(--icon-color);
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
-.soc-li:hover,
-.soc-li:focus{
+.soc-li a:hover,
+.soc-li a:focus{
+    color: var(--white-color);
     background-color: var(--accent-color);
-    fill: var(--white-color);
 }
+.soc-li:not(:first-child){
+    margin-left: 10px; 
+}
+.soc-li a svg{
+    fill: currentColor;
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+}
+.clients li:not(:first-child){
+    margin-left: 30px;
+}
+.clients li svg{
+    fill: currentColor;
+}
+.clients-link{
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    color:var(--icon-color);
+}
+.clients-link:hover,
+.clients-link:focus{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
 
 /* Подвал */
 
