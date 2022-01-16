@@ -7,6 +7,7 @@
     --background-grey: #2F303A;
     --background-light-grey: #F5F4FA;
     --card-set-gap: 30px;
+    --icon-size: 44px 44px
 }
 body{
     background-color: var(--white-color);
@@ -189,14 +190,17 @@ display: flex;
     display: block;
     border-radius: 4px;
     background-color: var(--background-light-grey);
-    box-sizing: border-box;
     height: 120px;   
-   
     margin-bottom: 30px;
+    padding: 25px 100px;
 }
-.antena-icon{
-    margin: 25 100
+.benefits-icon{
+    display: block;
+    width: 70px;
+    height: 70px;
+    
 }
+
 .benefits-li{
 width: 270px;
 } 
@@ -257,7 +261,7 @@ width: 270px;
 .profession{
     font-size: 16px;
     line-height: 1.19;
-    margin-bottom: var(--card-set-gap);
+    margin-bottom: 16px;
 }
 .employee-li:not(:first-child){
     margin-left: var(--card-set-gap);
@@ -266,9 +270,29 @@ width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
-    height: 368px;
     background: #FFFFFF;
     text-align: center;
+}
+.soc-li{
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px 12px;
+    
+}
+.soc-li:not(:first-child){
+    margin-left: 10px;
+}
+.soc-ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--card-set-gap);
+}
+.soc-li:hover,
+.soc-li:focus{
+    background-color: var(--accent-color);
+    fill: var(--white-color);
 }
 
 /* Подвал */
