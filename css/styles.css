@@ -285,7 +285,6 @@ width: 270px;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
 }
 .soc-li a:hover,
 .soc-li a:focus{
@@ -332,8 +331,11 @@ width: 270px;
     background-color: var(--background-grey);
     padding-top: 60px;
     padding-bottom: 60px;
+    
 }
-
+.footer-container{
+    display: flex;
+}
 .logo-footer{
     font-family: Raleway;
     font-style: normal;
@@ -379,7 +381,48 @@ address li:not(:last-child){
 .address-link:focus{
     color: var(--accent-color);
 }
+.join{
+    margin-left: 70px;
+    padding-top: 10px;
+}
+.header-footer{
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+.join-ul{
+    display: flex;
+}
+.join a svg{
+    fill: currentColor;
+}
+.join-li a{
+    color: var(--white-color);
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.join-li:not(:first-child){
+    margin-left: 10px;
+}
+.join-li a:hover,
+.join-li a:focus{
+    background-color: var(--accent-color);
+}
 
+
+/* страница портфолио */
 .filter-link{
     text-align: center;
     display: flex;
