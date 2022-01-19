@@ -184,7 +184,8 @@ header{
 display: none;
 }
 .benefits-section{
-display: flex;
+    display: flex;
+    justify-content: center;
 }
 .benefits-bkg{
     display: block;
@@ -195,10 +196,10 @@ display: flex;
     padding: 25px 100px;
 }
 .benefits-icon{
-    display: block;
+    display: flex;
+    align-items: center;
     width: 70px;
     height: 70px;
-    
 }
 
 .benefits-li{
